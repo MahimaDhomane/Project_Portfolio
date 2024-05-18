@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: linear-gradient(#83a8b9,#e1eec3);
+    background-repeat: no-repeat;
+    
+}
+body{
+    background: linear-gradient(#83a8b9,#e1eec3);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.name {
+    padding-left: 70px;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(215,236,229);
+    font-size: 40px;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    height: 100px;
+}
+
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    background-color: grey;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(243, 232, 232, 0.877);
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+button .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 1.5s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.container {
+    padding-top: 70px;
+    text-align: center; /* Center the photo */
+}
+
+.photo-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; /* Add space between photo and paragraph container */
+}
+
+.para-container {
+    display: flex;
+}
+    
+.photo {
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the photo circular */
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out; /* Smooth transition for photo */
+}
+
+.move-left {
+    transform: translateX(-100px); /* Adjust as needed */
+}
+
+.para {
+    display: none; /* Initially hide the paragraph */
+    color: black;
+    width: 450px; /* Adjust size as needed */
+    height: 430px; /* Adjust size as needed */
+    border: 1px solid black;
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px rgba(243, 232, 232, 0.877);
+    transition: opacity 1s ease-in-out; /* Smooth transition for paragraph */
+}
+
+.fade-in {
+    display: inline-block;
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.social-icons a {
+    color: #000; /* Default icon color */
+    font-size: 30px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+.social-icons a:hover {
+    color: #0077b5; /* Hover color (e.g., LinkedIn blue) */
+}
+
+.copy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.email {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    cursor: pointer;
+    text-align: center;
+    user-select: none; /* Prevents text selection */
+}
+
+.email:hover {
+    background-color: #d6d8db;
+}
