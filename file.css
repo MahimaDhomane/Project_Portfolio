@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    height: 100%;
     background: linear-gradient(#83a8b9, #e1eec3);
     color: #333;
 }
@@ -63,17 +64,21 @@ header {
     transform: scale(1.05);
 }
 
-.social-icons {
-    margin-top: 20px;
+button.light-blue {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3f87ff; /* Light blue background color */
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.social-icons a {
-    margin: 0 10px;
-    color: #333;
-    font-size: 1.5em;
-    transition: color 0.3s;
+button.light-blue:hover {
+    background-color: #1c6ee4; /* Darker blue on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
-.social-icons a:hover {
-    color: #0073e6;
-}
