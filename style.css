@@ -1,19 +1,16 @@
 * {
     margin: 0px;
-    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: linear-gradient(#83a8b9,#e1eec3);
-    background-repeat: no-repeat;
     
 }
 body{
     background: linear-gradient(#83a8b9,#e1eec3);
-    background-repeat: no-repeat;
-    background-size: auto;
+    
 }
 
 .name {
-    padding-left: 70px;
+    padding-left: 100px;
 }
 
 .header {
@@ -32,7 +29,7 @@ button {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    background-color: grey;
+    background-color: rgb(111, 203, 245);
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(243, 232, 232, 0.877);
@@ -44,7 +41,7 @@ button {
 button .ripple {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(85, 192, 224, 0.6);
     transform: scale(0);
     animation: ripple-animation 1.5s linear;
     pointer-events: none;
@@ -103,15 +100,17 @@ button .ripple {
 }
 
 .social-icons {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+    justify-content: space-between;
+
+
+    
 }
 .social-icons a {
     color: #000; /* Default icon color */
     font-size: 30px; /* Icon size */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition */
+    padding-left: 50px;
 }
 .social-icons a:hover {
     color: #0077b5; /* Hover color (e.g., LinkedIn blue) */
@@ -142,4 +141,19 @@ button .ripple {
 
 .email:hover {
     background-color: #d6d8db;
+}
+
+.msg{
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.contact{
+    background-color: rgb(215,236,229);
+    font-size: 40px;
+    color: black;
+    padding-top: 20px;
+    align-items: center;
+    height: 100px;
 }
